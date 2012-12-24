@@ -1,4 +1,8 @@
 TwitterPics::Application.routes.draw do
+  get "pics/index"
+
+  get "pics/user"
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
