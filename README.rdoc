@@ -1,1 +1,6 @@
 Pet proyect in Ruby on Rails with gem twitter.
+
+QUICK START
+
+1. execute $ rails server
+2. go to the browser http://0.0.0.0:3000/ or http://0.0.0.0:3000/index/index
