@@ -1,6 +1,5 @@
-<%= debug @user %>
 <div class="user">
-	<div style="float:left;">
+	<div class="image_user">
 		<%= image_tag(@user.profile_image_url, :size => '48x48', :alt => @user.name ) %>
 	</div>
 	<div style="float:left;">
@@ -11,20 +10,20 @@
 			<%= @user.location %>
 		</div>
 		<div style="float:left;">
-			<%= @user.screen_name %>
+			<%= link_to(@user.screen_name, 'http://twitter.com/'+@user.screen_name); %>
 		</div>
 	</div>
-
 </div>
 
 <div class="tweets">
-	<%#= debug @home_timeline %>
+	<h2>Tweets</h2>
 	<% @tweets.each do |tweet| %>
 		<div class="tweet"><%= tweet.text %></div>
 	<% end %>
 </div>
 
 <div class="mentions">
+	<h2>Mentions</h2>
 	<% @mentions.each do |mention| %>
 		<div class="tweet"><%= mention.user.screen_name %> <%= mention.text %></div>
 	<% end %>
