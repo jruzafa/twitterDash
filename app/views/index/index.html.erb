@@ -1,0 +1,31 @@
+<%= debug @user %>
+<div class="user">
+	<div style="float:left;">
+		<%= image_tag(@user.profile_image_url, :size => '48x48', :alt => @user.name ) %>
+	</div>
+	<div style="float:left;">
+		<div style=" clear:left;">
+			<%= @user.name %>
+		</div>
+		<div style=" clear:left;">
+			<%= @user.location %>
+		</div>
+		<div style="float:left;">
+			<%= @user.screen_name %>
+		</div>
+	</div>
+
+</div>
+
+<div class="tweets">
+	<%#= debug @home_timeline %>
+	<% @tweets.each do |tweet| %>
+		<div class="tweet"><%= tweet.text %></div>
+	<% end %>
+</div>
+
+<div class="mentions">
+	<% @mentions.each do |mention| %>
+		<div class="tweet"><%= mention.user.screen_name %> <%= mention.text %></div>
+	<% end %>
+</div>

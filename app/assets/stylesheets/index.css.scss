@@ -1,0 +1,28 @@
+// Place all the styles related to the Index controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+$container: 500px;
+
+.user{
+	width: 150px;
+	float: left;
+}
+
+.tweets{
+	width: $container;
+	margin-right: 20px;
+	float: left;
+}
+
+.mentions{
+	width: $container;
+	float: left;
+}
+
+.tweet{
+	-webkit-box-shadow:  1px 1px 1px 1px #777;
+	box-shadow:  1px 1px 1px 1px #777;
+	margin-bottom: 5px;
+	border: 1px solid #666;
+}
