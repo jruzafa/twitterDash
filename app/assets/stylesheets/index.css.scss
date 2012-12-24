@@ -7,6 +7,19 @@ $container: 500px;
 .user{
 	width: 150px;
 	float: left;
+	margin-top: 68px;
+}
+
+.image_user{
+	float: left;
+	width: 48px;
+	height: 48px;
+	margin-right: 10px;
+	-webkit-box-shadow:  1px 1px 1px 1px #777;
+	box-shadow:  1px 1px 1px 1px #777;
+	border: 1px solid #666;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
 }
 
 .tweets{
@@ -21,8 +34,11 @@ $container: 500px;
 }
 
 .tweet{
-	-webkit-box-shadow:  1px 1px 1px 1px #777;
-	box-shadow:  1px 1px 1px 1px #777;
 	margin-bottom: 5px;
+	padding: 2px;
+	-webkit-box-shadow: 1px 1px 1px 1px #777;
+	box-shadow: 1px 1px 1px 1px #777;
 	border: 1px solid #666;
+	-webkit-border-radius: 3px;
+    border-radius: 3px;
 }
