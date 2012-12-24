@@ -1,3 +1,1 @@
-QUICK START
-
-1.
+Pet proyect in Ruby on Rails with gem twitter.
